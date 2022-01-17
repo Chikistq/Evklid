@@ -1,0 +1,162 @@
+
+/*не работает что-то Транзишен для svg*/
+/*.search-form__button {*/
+/*  transition: fill, stroke .4s ease;*/
+/*}*/
+
+
+/*Padding outline = 5px при фокусе*/
+.nav-link::before,
+.header-top__search-link::before,
+.search-form__button::before,
+.steps__tab-link::before,
+.footer__nav-link::before,
+.footer__social-link::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  transform: translate(-5px, -5px);
+  outline: 2px solid var(--accent);
+  opacity: 0;
+  transition: opacity .4s ease-in-out;
+}
+/*end*/
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+.header-top__search-link:hover .header-top__search path {
+  stroke: var(--accent);
+}
+
+.header-top__search-link:hover .header-top__search rect,
+.footer__social-link:hover path {
+  fill: var(--accent);
+}
+
+.footer__social-link:active path {
+  fill: var(--accent-dark);
+}
+
+.search-form__button:hover .header-top__close-search rect {
+  fill: var(--accent);
+}
+
+.search-form__button:hover .header-top__close-search circle {
+  stroke: var(--accent);
+}
+
+.steps__tab-link:hover,
+.footer__nav-link:hover {
+  color: var(--accent);
+}
+
+.nav-link:focus,
+.header-top__search-link:focus,
+.search-form__button:focus,
+.steps__tab-link:focus,
+.footer__nav-link:focus,
+.footer__social-link:focus
+{
+  outline: none;
+}
+
+.nav-link:focus::before,
+.header-top__search-link:focus::before,
+.search-form__button:focus::before,
+.steps__tab-link:focus::before,
+.footer__nav-link:focus::before,
+.footer__social-link:focus::before
+{
+  opacity: 1;
+}
+
+.nav-link:active,
+.header-top__search-link:active,
+.search-form__button:active,
+.steps__tab-link:active,
+.footer__nav-link:active
+{
+  color: var(--accent-dark);
+}
+
+.nav-link:active::before,
+.header-top__search-link:active::before,
+.search-form__button:active::before,
+.steps__tab-link:active::before,
+.footer__nav-link:active::before,
+.footer__social-link:active::before
+{
+  opacity: 0;
+}
+.nav-link:active::after,
+.header-top__search-link:active::after,
+.search-form__button:active::after,
+.steps__tab-link:active::after
+{
+  opacity: 1;
+}
+
+.steps__tab-link:active {
+  color: var(--accent-dark);
+}
+
+.header-bottom__button:hover,
+.steps__info-btn:hover,
+.footer__feedback-btn:hover {
+  background-color: var(--accent-light);
+}
+
+.header-bottom__button:focus,
+.steps__info-btn:focus,
+.footer__feedback-btn:focus {
+  background-color: var(--accent-light);
+  /*outline: none;*/
+}
+
+.header-bottom__button:active,
+.steps__info-btn:active,
+.footer__feedback-btn:active {
+  background-color: var(--accent-dark);
+}
+
+.about-us__overlay-btn:hover,
+.about-us__overlay-btn:focus {
+  background-color: var(--accent);
+}
+
+.about-us__overlay-btn:active {
+  background-color: var(--accent-dark);
+  outline: 3px solid var(--accent-dark);
+}
+
+.steps__agreement-btn:hover,
+.steps__agreement-btn:focus {
+  color: #fff;
+  background-color: #666;
+  border: 1px solid #666;
+  outline: none;
+}
+
+.steps__agreement-btn:active {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+input:focus,
+textarea:focus {
+  outline: #fff 1px solid;
+  border-radius: 3px;
+}
+
+
+
+
