@@ -1,10 +1,4 @@
-<p align="left">
-  <a href="https://evklid.uidevelop.ru">
-    <img alt="Evklid -  Проектные системы" src="https://i.postimg.cc/3Nrm5LG9/Logo.png" width="200" />
-  </a>
-</p>
-
-# Evklid - Проектные системы
+# ![Evklid](https://i.postimg.cc/3Nrm5LG9/Logo.png")
 
 
 Домашняя работа в рамках курса "Веб верстка", Skillbox. </br>
